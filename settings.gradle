@@ -9,4 +9,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "excavation-fabric-26.2"
+rootProject.name = "excavation-fabric-26.3"

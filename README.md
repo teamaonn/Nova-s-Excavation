@@ -33,7 +33,7 @@ There is currently only one level:
 
 ## Requirements
 
-* Minecraft Java Edition **26.2**
+* Minecraft Java Edition **26.3**
 * Fabric Loader
 * Fabric API
 * Java 25
