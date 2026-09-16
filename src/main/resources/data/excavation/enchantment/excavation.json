@@ -1,0 +1,22 @@
+{
+  "description": {
+    "translate": "enchantment.excavation.excavation"
+  },
+  "supported_items": "#excavation:excavation_tools",
+  "primary_items": "#excavation:excavation_tools",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 51,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {}
+}

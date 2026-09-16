@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "excavation",
+  "version": "${version}",
+  "name": "Excavation",
+  "description": "Adds an enchantment for pickaxes and shovels that mines a 3x3x3 area.",
+  "authors": [
+    "Joshua"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.joshua.excavation.ExcavationMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2-alpha.5",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
