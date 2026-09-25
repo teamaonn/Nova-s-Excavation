@@ -5,18 +5,19 @@
   "supported_items": "#excavation:excavation_tools",
   "primary_items": "#excavation:excavation_tools",
   "weight": 10,
-  "max_level": 1,
+  "max_level": 7,
   "min_cost": {
-    "base": 1,
+    "base": 10,
     "per_level_above_first": 10
   },
   "max_cost": {
-    "base": 51,
+    "base": 50,
     "per_level_above_first": 10
   },
   "anvil_cost": 1,
   "slots": [
     "mainhand"
   ],
-  "effects": {}
+  "effects": {},
+  "exclusive_set": "#excavation:area_mining"
 }

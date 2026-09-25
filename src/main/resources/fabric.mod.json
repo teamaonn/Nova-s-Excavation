@@ -3,7 +3,7 @@
   "id": "excavation",
   "version": "${version}",
   "name": "Excavation",
-  "description": "Adds an enchantment for pickaxes and shovels that mines a 3x3x3 area.",
+  "description": "Adds Excavation, Quarry and Chunk Eater area-mining enchantments.",
   "authors": [
     "Joshua"
   ],
@@ -20,5 +20,8 @@
     "minecraft": "~26.3",
     "java": ">=25",
     "fabric-api": "*"
-  }
+  },
+  "mixins": [
+    "excavation.mixins.json"
+  ]
 }
