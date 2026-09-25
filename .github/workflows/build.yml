@@ -22,3 +22,12 @@ jobs:
         with:
           name: excavation-1.1.0
           path: build/libs/excavation-1.1.0.jar
+      - name: Verify server starts with enchantment data
+        run: |
+          mkdir -p run
+          printf 'eula=true\n' > run/eula.txt
+          timeout 180s gradle runServer --no-daemon > server.log 2>&1 || true
+          if ! grep -q 'Done (' server.log; then
+            cat server.log
+            exit 1
+          fi
