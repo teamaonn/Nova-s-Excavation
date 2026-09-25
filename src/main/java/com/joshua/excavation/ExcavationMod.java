@@ -69,10 +69,10 @@ public class ExcavationMod implements ModInitializer {
             int quarryLevel = getLevel(world, tool, QUARRY);
             int excavationLevel = getLevel(world, tool, EXCAVATION);
             if (chunkLevel > 0) {
-                radius = 16 + Math.min(chunkLevel, 16);
+                radius = 15 + Math.min(chunkLevel, 16);
                 freeDurability = true;
             } else if (quarryLevel > 0) {
-                radius = 8 + Math.min(quarryLevel, 8);
+                radius = 7 + Math.min(quarryLevel, 8);
                 freeDurability = true;
             } else if (excavationLevel > 0) {
                 radius = Math.min(excavationLevel, 7);
