@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "excavation:excavation",
-    "excavation:quarry",
-    "excavation:chunk_eater"
+    "excavation:excavation"
   ]
 }

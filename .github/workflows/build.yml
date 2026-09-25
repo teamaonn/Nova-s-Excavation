@@ -20,8 +20,8 @@ jobs:
       - run: gradle build --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: excavation-1.1.0
-          path: build/libs/excavation-1.1.0.jar
+          name: excavation-1.1.1
+          path: build/libs/excavation-1.1.1.jar
       - name: Verify server starts with enchantment data
         run: |
           mkdir -p run

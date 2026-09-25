@@ -8,7 +8,9 @@ Fabric area-mining enchantments for Minecraft Java 26.3. Apply one to a pickaxe 
 | Quarry | I–VIII | 17×17×17 through 31×31×31 | None |
 | Chunk Eater | I–XVI | 33×33×33 through 63×63×63 | None |
 
-Each level increases the side length by two blocks. The enchantments are mutually exclusive. Excavation has a common enchanting weight; Quarry and Chunk Eater are increasingly rare and more expensive to combine on an anvil.
+Each level increases the side length by two blocks. The enchantments are mutually exclusive. Only Excavation appears in normal enchanting. Quarry and Chunk Eater are command-only experimental enchantments; they do not roll in the enchanting table or normal enchanted-book sources.
+
+For testing, hold a compatible pickaxe or shovel and use `/enchant @s excavation:quarry 1` or `/enchant @s excavation:chunk_eater 1`. Increase the final number to choose a level, up to VIII or XVI respectively.
 
 The extra blocks use Minecraft's normal player block-breaking path, including Silk Touch, Fortune, protection checks, and appropriate tool requirements. Unbreakable blocks, air, and blocks in unloaded chunks are skipped. Quarry and Chunk Eater send item drops to your inventory; excess drops fall on the ground. Regular Excavation uses normal drops and durability. Experience still drops normally.
 
