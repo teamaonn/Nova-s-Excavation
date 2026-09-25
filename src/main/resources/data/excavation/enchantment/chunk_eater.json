@@ -1,0 +1,23 @@
+{
+  "description": {
+    "translate": "enchantment.excavation.chunk_eater"
+  },
+  "supported_items": "#excavation:excavation_tools",
+  "primary_items": "#excavation:excavation_tools",
+  "weight": 1,
+  "max_level": 16,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 30
+  },
+  "max_cost": {
+    "base": 70,
+    "per_level_above_first": 30
+  },
+  "anvil_cost": 16,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#excavation:area_mining",
+  "effects": {}
+}
