@@ -1,0 +1,33 @@
+name: Build
+on:
+  push:
+    branches:
+      - feature/excavation-quarry-chunk-eater
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.7.1'
+      - run: gradle build --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: excavation-1.1.1
+          path: build/libs/excavation-1.1.1.jar
+      - name: Verify server starts with enchantment data
+        run: |
+          mkdir -p run
+          printf 'eula=true\n' > run/eula.txt
+          timeout 180s gradle runServer --no-daemon > server.log 2>&1 || true
+          if ! grep -q 'Done (' server.log; then
+            cat server.log
+            exit 1
+          fi
